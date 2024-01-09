@@ -1,1 +1,11 @@
+#grid {
+    border: 2px solid black;	
+    margin: auto;
+    width: 600px;
+    height: 600px;
+}
+
+.cell {
+    display: flex;
+}
 

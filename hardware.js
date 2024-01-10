@@ -1,10 +1,16 @@
-let rowLength = 16;
-let width = 600;
-
-let cellSize = width / rowLength;
-
+const slider = document.getElementById('slider');
 const grid = document.getElementById('grid');
+const sliderText = document.getElementById('slider_text');
 
+sliderText.innerHTML = slider.value;
+let rowLength = slider.value;
+
+let width = 600;
+let cellSize = width / rowLength;
+slider.oninput = () => {
+    sliderText.innerHTML = slider.value;
+    rowLength = slider.value;
+}
 for (let i = 0; i < rowLength; i++) {
     const row = document.createElement("div");
     row.className = 'row';
@@ -15,7 +21,6 @@ for (let i = 0; i < rowLength; i++) {
         cell.style.height = `${cellSize}px`;
         cell.addEventListener('mouseover', () => {
             cell.style.opacity = +cell.style.opacity + 0.1;
-            console.log(cell.style.opacity);
         });
         row.appendChild(cell);
     }

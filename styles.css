@@ -1,12 +1,37 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.html {
+    display: block;
+    min-height: 100%;
+}
 #heading {
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
+
 #box {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+#options {
+    display: inline-flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+}
+
 #grid {
     border: 2px solid black;	
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     margin: auto;
     width: 600px;
@@ -14,8 +39,9 @@
 }
 
 .slider_container {
-    display: inline-block;
+    text-align: center;
 }
+
 .row {
     display: flex;
 }
@@ -23,4 +49,3 @@
     background-color: black;
     opacity: 0%;
 }
-

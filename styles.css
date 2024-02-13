@@ -16,9 +16,9 @@
 #box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 100px;
-    max-width: 900px;
+    max-width: 35%;
     margin: 0 auto;
 }
 

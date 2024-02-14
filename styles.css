@@ -1,12 +1,22 @@
+:root {
+    --dark: #2A2829;
+    --main-bg: #D0B8AC;
+    --secondary: white;
+}
+
 * {
     padding: 0px;
     box-sizing: border-box;
     margin: 0px;
 }
-.html {
+
+html {
     display: block;
     min-height: 100%;
+    background-color: var(--main-bg);
+    color: var(--dark);
 }
+
 #heading {
     text-align: center;
     margin-bottom: 50px;
@@ -36,12 +46,16 @@
     margin: auto;
     width: 600px;
     height: 600px;
+    background-color: white;
 }
 
 .slider_container {
     text-align: center;
 }
 
+#slider {
+    accent-color: var(--secondary)
+}
 .row {
     display: flex;
 }
